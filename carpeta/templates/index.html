@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<script src="{{ url_for('static', filename="conect_serv.js") }}"></script>
+</head>
+
+<body>
+
+	<h1>GET</h1><br>
+
+		Nombre: <input id="nombre" type="text" name="nomb"><br/>
+		Apellido : <input id="apellido" type="text" name="apel"><br/>
+		Edad : <input id="edad" type="text" name="edad"><br/>
+		<input type="submit" onclick="print_data()" value="Registrar">
+		<!-- Llamo a la funcion que se contactará con el servidor -->
+
+		<div id="mensaje"></div>
+
+</body>
+</html>
